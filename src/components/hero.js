@@ -37,7 +37,8 @@ export default function Hero(props) {
               comfort of your own home.</Text>
             {/* <ButtonList links={props.links} /> */}
             <Text as="a" style={{ fontSize: 24 }} href="mailto:enquiries@moretonbaypodiatry.com.au">enquiries@moretonbaypodiatry.com.au</Text>
-            <Text as="a" style={{ fontSize: 24 }} href="tel:0424 428 932">0424 428 932</Text>
+            {' '}
+            <Text as="p" style={{ fontSize: 24 }} href="tel:0424 428 932">0424 428 932</Text>
           </Box>
         </Flex>
       </Container>
