@@ -13,6 +13,8 @@ import {
   Text,
 } from "./ui"
 
+const heading = <div style={{ color: '#2F80ED' }}>mobile</div>;
+
 export default function Hero(props) {
   return (
     <Section>
@@ -27,13 +29,14 @@ export default function Hero(props) {
             )}
           </Box>
           <Box width="half">
-            <Heading as="h1">
-              {props.kicker && <Kicker>{props.kicker}</Kicker>}
-              {props.h1}
+            <Heading as="h1" style={{ fontSize: 56 }}>
+              Step forward with <span style={{ color: '#2F80ED' }}>{heading.props.children}</span> podiatry
             </Heading>
             <Subhead as="h2">{props.subhead}</Subhead>
-            <Text as="p">{props.text}</Text>
-            <ButtonList links={props.links} />
+            <Text as="p" style={{ fontSize: 20 }}>Enjoy professional and quality foot care from the
+              comfort of your own home.</Text>
+            {/* <ButtonList links={props.links} /> */}
+            <Text as="a" style={{ fontSize: 24 }} href="mailto:enquiries@moretonbaypodiatry.com.au">enquiries@moretonbaypodiatry.com.au</Text>
           </Box>
         </Flex>
       </Container>

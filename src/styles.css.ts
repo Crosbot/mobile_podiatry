@@ -12,7 +12,16 @@ globalStyle("body", {
 
 globalStyle("*", {
   boxSizing: "border-box",
+
 })
+
+// //FONTS
+// globalStyle("font-face", {
+//   font-family: 'MyFont';
+//   src: url('./fonts/MyFont-Regular.ttf') format('truetype');
+//   font-weight: normal;
+//   font-style: normal;
+// })
 
 globalKeyframes("zoomInUp", {
   "0%": {

@@ -45,11 +45,19 @@ const fontWeights = {
   extrabold: "800",
 }
 
+// const fonts = {
+//   text: '"DM Sans", sans-serif',
+//   heading: '"DM Sans", sans-serif',
+//   mono: "DM Mono, Menlo, monospace",
+// }
+
 const fonts = {
-  text: '"DM Sans", sans-serif',
-  heading: '"DM Sans", sans-serif',
+  text: '"Lato", sans-serif',
+  heading: '"Arvo", sans-serif',
   mono: "DM Mono, Menlo, monospace",
 }
+
+
 
 const lineHeights = {
   text: "1.65",

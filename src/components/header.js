@@ -79,24 +79,6 @@ export default function Header() {
             <VisuallyHidden>Home</VisuallyHidden>
             <BrandLogo />
           </NavLink>
-          <nav>
-            <FlexList gap={4}>
-              {navItems &&
-                navItems.map((navItem) => (
-                  <li key={navItem.id}>
-                    {navItem.navItemType === "Group" ? (
-                      <NavItemGroup
-                        name={navItem.name}
-                        navItems={navItem.navItems}
-                      />
-                    ) : (
-                      <NavLink to={navItem.href}>{navItem.text}</NavLink>
-                    )}
-                  </li>
-                ))}
-            </FlexList>
-          </nav>
-          <div>{cta && <Button to={cta.href}>{cta.text}</Button>}</div>
         </Flex>
       </Container>
       <Container className={mobileHeaderNavWrapper[isOpen ? "open" : "closed"]}>
@@ -115,13 +97,13 @@ export default function Header() {
           <Flex>
             <Space />
             <div>
-              {cta && (
+              {/* {cta && (
                 <Button to={cta.href} variant={isOpen ? "reversed" : "primary"}>
                   {cta.text}
                 </Button>
-              )}
+              )} */}
             </div>
-            <Nudge right={3}>
+            {/* <Nudge right={3}>
               <InteractiveIcon
                 title="Toggle menu"
                 onClick={() => setOpen(!isOpen)}
@@ -131,13 +113,13 @@ export default function Header() {
               >
                 {isOpen ? <X /> : <Menu />}
               </InteractiveIcon>
-            </Nudge>
+            </Nudge> */}
           </Flex>
         </Flex>
       </Container>
       {isOpen && (
         <div className={mobileNavOverlay}>
-          <nav>
+          {/* <nav>
             <FlexList responsive variant="stretch">
               {navItems?.map((navItem) => (
                 <li key={navItem.id}>
@@ -154,7 +136,7 @@ export default function Header() {
                 </li>
               ))}
             </FlexList>
-          </nav>
+          </nav> */}
         </div>
       )}
     </header>
