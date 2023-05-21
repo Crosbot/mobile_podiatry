@@ -6,8 +6,8 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://gatsbycontentfulhomepage.gatsbyjs.io/",
-    title: "Gatsby Contentful Homepage Starter",
+    siteUrl: "https://moretonbaypodiatry.com.au/",
+    title: "Morton Bay Mobile Podiatry",
     author: `Gatsby`,
     description: "A Gatsby Starter for building homepages with Contentful",
   },
@@ -28,7 +28,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        name: "Gatsby Starter Contentful Homepage",
+        name: "Morton Bay Mobile Podiatry",
         short_name: "Gatsby",
         start_url: "/",
         // These can be imported once ESM support lands
