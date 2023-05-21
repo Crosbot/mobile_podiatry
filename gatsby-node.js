@@ -611,9 +611,13 @@ exports.createSchemaCustomization = async ({ actions }) => {
     }
   `)
 }
-
+const path = require("path");
 exports.createPages = ({ actions }) => {
-  const { createSlice } = actions
+  const { createSlice, createPage } = actions
+  createPage({
+    path: "/",
+    component: path.resolve("./src/pages/index.js"),
+  });
   createSlice({
     id: "header",
     component: require.resolve("./src/components/header.js"),
@@ -623,4 +627,3 @@ exports.createPages = ({ actions }) => {
     component: require.resolve("./src/components/footer.js"),
   })
 }
-      
